@@ -1,0 +1,31 @@
+// EXERCICE 2 : Palindrome Checker: Create a recursive function to check if a given string is 
+//              a palindrome (reads the same forwards and backwards), ignoring spaces, punctuation, and capitalization.
+
+FUNCTION PALANDROM (word : STRING,debut,fin : INTEGER) : BOOLEAN
+VAR
+    
+BEGIN
+    IF ( debut =  fin) THEN
+        RETURN TRUE ;
+    END_IF ;
+    if
+IF (word [debut] <> word[fin]) THEN
+    RETURN FALSE ; 
+END_IF   
+IF (debut < fin ) THEN
+    RETURN PALANDROM( word , debut+1, fin-1)  
+END_IF
+RETURN TRUE ;
+END
+
+ALGORITHM PAL
+VAR
+    str : STRING := "RADAR";
+BEGIN
+    IF (PALANDROM(str,1,str.length) = TRUE) THEN
+        Write("Palindrome")
+    ELSE
+        Write("Not Palindrome")
+    END_IF
+   
+END

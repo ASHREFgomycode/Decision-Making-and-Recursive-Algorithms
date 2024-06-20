@@ -1,0 +1,14 @@
+//EXERCICE  1 : Power Function: Write a recursive function to calculate the result of raising a number to a given power.
+
+FUNCTION Power(x,n:INTEGER) : INTEGER
+VAR
+   y : INTEGER;
+BEGIN
+
+    IF (n = 1) THEN
+        RETURN x;
+    END_IF
+
+
+    RETURN x *  power(x, n-1);
+END
